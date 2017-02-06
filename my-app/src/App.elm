@@ -1,7 +1,8 @@
 module App exposing (..)
 
-import Html exposing (Html, text, div, img)
+import Html exposing (..)
 import Html.Attributes exposing (src)
+import Html.Events exposing (..)
 
 
 type alias Model =
@@ -27,8 +28,7 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div []
-        [ img [ src model.logo ] []
-        , div [] [ text model.message ]
+        [ button [ text "Stuff"]
         ]
 
 
